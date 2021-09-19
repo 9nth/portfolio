@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="home.html" class="fa fa-home"></a>
+        <div class="header-text">
+          <a href="about.html" class="about">About</a>
+          <div class="dropdown">
+            <button class="dropBtn">Portfolio</button>
+            <div class="dropdown-content">
+              <a href="design.html">Graphic Design</a>
+              <a href="web.html">Web Design</a>
+              <a href="photo.html">Photography</a>
+            </div>
+          </div>
+          <a href="#" class="contact">Contact</a>
+        </div>
+        <div class="burger">
+          <button class="burgerDrop fa fa-bars"></button>
+          <div class="burger-content">
+            <a href="#">Graphic Design</a>
+            <a href="web.html">Web Design</a>
+            <a href="photo.html">Photography</a>
+          </div>
+        </div>
+    </div>
+<hr>
+
+  <div class="design-head">
+    <h2>Web Design</h2>
+  </div>
+
+<div class="allWebProjects">
+  <div class="web-proj-1">
+    <h2 class="web-proj-1-head">Travel boking system for the South Island of New Zealand.</h2>
+      <div class="web-image-slider-1">
+        <!-- Prev / Next Buttons -->
+        <div class="prev-next">
+          <button onclick="show_imageOne('left')" id="left" class="left"><i class="fa fa-angle-left"></i></button>
+          <img id="slider1img" class="slider-1-img" src="#" alt="">
+          <button onclick="show_imageOne('right')" id="right" class="right"><i class="fa fa-angle-right"></i></button>
+        </div>
+      </div>
+
+
+
+      <div class="project-about">
+        <p class="web-project-1-about-info">This project was created as a university assignment, the goal was to create a site that was able to control information displayed on the page depending on the users selections, through the use of JavaScript. <br> <br> </p>
+      </div>
+        <p class="tools">Languages & Tools Used:</p>
+        <p class="tools-a">HTML, CSS, JavaScript, Gulp JS Linter, Adobe Illustrator</p>
+
+        <div class="liveBtn">
+          <button> <a href="https://9nth.github.io/summativeTwo/" target="_blank">Live Demo</a> </button>
+        </div>
+      </div>
+
+  <div class="web-proj-2">
+    <h2 class="web-proj-2-head">Branding and event planning for a fictional music festival.</h2>
+      <div class="web-image-slider-2">
+        <!-- Prev / Next Buttons -->
+        <div class="prev-next">
+          <button onclick="show_imageTwo('left')" id="left" class="left"><i class="fa fa-angle-left"></i></button>
+          <img id="slider2img" class="slider-2-img" src="#" alt="">
+          <button onclick="show_imageTwo('right')" id="right" class="right"><i class="fa fa-angle-right"></i></button>
+        </div>
+      </div>
+      <div class="web-project-about">
+        <p class="web-project-2-about">The music festival takes place on the water, literally. The main stage being a barge that sits off the coast of Maitai Bay in Northland.<br><br>
+        A summer vibe festival that takes place over two days.</p>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Below * all projects ends -->
+</div>
+<script src="js/web.js" charset="utf-8"></script>
+  </body>
+</html>

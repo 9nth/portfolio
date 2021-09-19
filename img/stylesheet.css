@@ -1,0 +1,749 @@
+// Custom sass ..
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Reset ENDS ...*/
+
+@font-face {
+  font-family: 'Overpass Regular'; /*a name to be used later*/
+  src: url('../fonts/overpass/overpass-regular.ttf'); /*URL to font*/
+  font-family: 'Overpass Semibold'; /*a name to be used later*/
+  src: url('../fonts/overpass/overpass-semibold.ttf'); /*URL to font*/
+  font-family: 'Overpass Semibold Italic'; /*a name to be used later*/
+  src: url('../fonts/overpass/Overpass-SemiBoldItalic.ttf'); /*URL to font*/
+  font-family: 'Overpass Bold'; /*a name to be used later*/
+  src: url('../fonts/overpass/overpass-bold.ttf'); /*URL to font*/
+  font-family: 'Overpass Extra Bold'; /*a name to be used later*/
+  src: url('../fonts/overpass/overpass-extrabold.ttf'); /*URL to font*/
+  font-family: 'Overpass Black'; /*a name to be used later*/
+  src: url('../fonts/overpass/overpass-black.ttf'); /*URL to font*/
+}
+
+.bg-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: white;
+}
+
+.header-text {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+.fa-home {
+  font-size: 40px;
+  text-decoration: none;
+  color: #444444;
+  padding: 20px;
+}
+
+.about,
+.dropBtn,
+.contact {
+  background: none;
+  color: inherit;
+  border: none;
+	outline: inherit;
+  font-size: 26px;
+  font-family: 'Overpass';
+  padding-top: 20px;
+}
+
+.about,
+.contact {
+  text-decoration: none;
+}
+
+.dropBtn {
+  font-size: 26px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Overpass';
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.name {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  font-size: 40px;
+  font-family: 'Overpass';
+  color: #3d3d63;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 2%;
+}
+
+.passionate {
+  color: white;
+  font-family: 'Overpass';
+  text-align: center;
+
+}
+
+.me {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  height: 40%;
+  padding-top: 5%;
+}
+
+
+.portfolioBtns {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+	left: 0;
+	right: 0;
+  bottom: 0;
+	margin: auto;
+  padding-bottom: 3%;
+}
+
+
+.port-head {
+  position: absolute;
+  text-align: center;
+  font-size: 65px;
+  font-family: 'Overpass';
+}
+
+.port-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 20%;
+  text-align: center;
+  font-size: 40px;
+  height: 80%;
+  background: none;
+  border: none;
+}
+
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+  padding: 5%;
+}
+
+.card-title {
+  font-size: 40px;
+  padding-top: 3%;
+  color: white;
+}
+
+.card-text {
+  color: white;
+}
+
+/* --------------------HOME PAGE ENDS-------------------- */
+/* --------------------ABOUT PAGE-------------------- */
+
+.me-img-about {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  top:0;
+	bottom: 0;
+	margin: auto;
+}
+
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+  top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+  width: 70%;
+}
+.about-page-text {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  color: white;
+  font-family: 'Overpass';
+  font-size: 20px;
+  justify-content: center;
+  top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.email-cont,
+.phone-cont,
+.linkedin-cont,
+.instagram-cont {
+  display: flex;
+}
+
+.fa-envelope-o,
+.fa-phone,
+.fa-linkedin-square,
+.fa-instagram {
+  font-size: 30px;
+  line-height: 2;
+  padding-right: 3.5%;
+}
+
+.linkedin-link,
+.instagram-link {
+  text-decoration: none;
+  color: white;
+  line-height: 2.7;
+  border-bottom: 8px solid rgba(255, 0, 0, 0.01);
+}
+
+.linkedin-link:hover,
+.instagram-link:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 8px solid white;
+}
+
+/* --------------------ABOUT PAGE ENDS-------------------- */
+/* --------------------PHOTO PAGE-------------------- */
+
+hr {
+  height: 4px;
+  background: #444444;
+}
+
+.burger {
+  display: none;
+}
+
+.burger-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  width: 100%;
+  margin-left: -45%;
+  font-size: 140%;
+}
+
+.burger-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Overpass';
+}
+
+.burger-content a:hover {
+  background-color: #ddd;
+
+}
+
+.burger:hover .burger-content {
+  display: block;
+}
+
+.photo-head {
+  text-align: center;
+  padding-top: 3%;
+  font-family: 'Overpass';
+  font-size: 40px;
+}
+
+.fa-bars {
+  padding: 20px;
+  font-size: 30px;
+  color: #444444;
+}
+
+.burgerDrop {
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.photo-section-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.photo-section-btns button {
+  background: none;
+  border: none;
+  font-family: 'Overpass';
+  font-size: 30px;
+  border-bottom: 6px solid white;
+}
+
+.photo-section-btns button:hover {
+  background: none;
+  border: none;
+  font-family: 'Overpass';
+  font-size: 30px;
+  border-bottom: 6px solid black;
+}
+
+.photo-head-2,
+.photo-head-3 {
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Overpass';
+  top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.photo-head-3 {
+  padding-top: 2%;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6,
+.row-7,
+.row-8,
+.row-9,
+.row-10,
+.row-11 {
+  width: 90%;
+  top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row-1-a,
+.row-1-b,
+.row-3-a,
+.row-3-b,
+.row-4-a,
+.row-4-b,
+.row-5-a,
+.row-5-b,
+.row-6-a,
+.row-6-b,
+.row-7-a,
+.row-7-b,
+.row-9-a,
+.row-9-b,
+.row-10-a,
+.row-10-b {
+  position: relative;
+  width: 46.8%;
+  height: 100%;
+}
+
+.row-2-a,
+.row-2-b,
+.row-2-c,
+.row-8-a,
+.row-8-b,
+.row-8-c,
+.row-11-a,
+.row-11-b,
+.row-11-c  {
+  width: 30%;
+  height: auto;
+  position: relative;
+}
+
+.row-11 {
+  padding-bottom: 5%;
+}
+/* --------------------PHOTO PAGE ENDS-------------------- */
+/* --------------------DESIGN PAGE-------------------- */
+
+.graphic-head h2 {
+  text-align: center;
+  font-family: 'Overpass';
+  font-size: 400%;
+  color: #444444;
+}
+
+.graphic-head {
+  display: flex;
+  justify-content: center;
+  background-color: #fff0d4;
+  width: 100%;
+}
+
+.project-1-head,
+.project-2-head,
+.project-3-head,
+.project-4-head {
+  text-align: center;
+  font-family: 'Overpass';
+  font-size: 300%;
+  width: 50%;
+  top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+  margin-top: 1%;
+  padding-top: 1%;
+}
+
+.project-1-head,
+.project-1-about-info {
+  color: #fff0d4;
+  padding-top: 2%;
+}
+
+.project-2-head,
+.project-2-about-info {
+  color: #dedacc;
+  padding-top: 2%;
+}
+
+.project-3-head,
+.project-3-about-info {
+  color: #d9d999;
+  padding-top: 2%;
+}
+
+.project-4-head,
+.project-4-about-info {
+  color: #00416b;
+  padding-top: 2%;
+}
+
+.project-about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Overpass Semibold';
+  font-size: 200%;
+  width: 70%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-bottom: 1%;
+}
+
+.projectOneCont {
+  background-color: #fd9a88;
+  margin-top: -1%;
+  padding-bottom: 4%;
+}
+
+.projectTwoCont {
+  background-color: #759b90;
+  margin-top: -6%;
+  padding-bottom: 4%;
+}
+
+.projectThreeCont {
+  background-color: #36443c;
+  margin-top: -6%;
+  padding-bottom: 4%;
+}
+
+.projectFourCont {
+  background-color: #d0ecf6;
+  margin-top: -6%;
+}
+
+hr {
+  margin-top: 4%;
+  margin-bottom: -0.1%;
+}
+
+/* Image Slider */
+
+.image-slider-1,
+.image-slider-2,
+.image-slider-3,
+.image-slider-4 {
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.image-slider-1 img,
+.image-slider-2 img,
+.image-slider-3 img,
+.image-slider-4 img {
+  width: auto;
+  height: 500px;
+}
+
+.slider-1-img,
+.slider-2-img,
+.slider-3-img,
+.slider-4-img {
+  position: relative;
+}
+
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  position: sticky;
+}
+
+.left,
+.right {
+  height: 100%;
+  width: 10%;
+  border: none;
+  background-color: rgba(169, 169, 169, 0.001);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.left:hover,
+.right:hover {
+  height: 100%;
+  width: 10%;
+  border: none;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  color: white;
+  font-size: 600%;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+  color: white;
+  font-size: 600%;
+  color: #444444;
+}
+
+.wave1{
+  margin-top: -4%;
+}
+
+.wave2 {
+  margin-top: -4%;
+}
+
+.wave3 {
+  margin-top: -4%;
+}
+
+/* Graphic Design Page Ends */
+
+/* Web Design */
+
+.design-head h2 {
+  text-align: center;
+  font-family: 'Overpass';
+  font-size: 400%;
+  color: #444444;
+}
+
+.design-head {
+  display: flex;
+  justify-content: center;
+  background-color: #D6D2C4;
+  color: #CF4520;
+  width: 100%;
+}
+
+.web-proj-1-head {
+  text-align: center;
+  font-family: 'Overpass';
+  font-size: 300%;
+  width: 50%;
+  top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+  padding-top: 2%;
+  color: #F6F1E2;
+}
+
+.web-image-slider-1 img,
+.web-image-slider-2 img,
+.web-image-slider-3 img,
+.web-image-slider-4 img {
+  width: auto;
+  height: 500px;
+}
+
+.web-image-slider-1,
+.web-image-slider-2,
+.web-image-slider-3,
+.web-image-slider-4 {
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.liveBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.web-proj-1 {
+  background-color: #1A414D;
+}
+
+.web-project-1-about-info {
+  color: #F6F1E2;
+}
+
+.liveBtn button {
+  margin-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 0.2%;
+  padding-top: 0.2%;
+  text-decoration: none;
+  border-radius: 15px;
+  border: none;
+  background-color: #00ab66;
+  margin-bottom: 4%;
+}
+
+.liveBtn a {
+  text-decoration: none;
+  color: #F6F1E2;
+  font-family: 'Overpass Semibold';
+  font-size: 150%;
+}
+
+.tools {
+  text-align: center;
+  font-family: 'Overpass Semibold';
+  font-size: 150%;
+  color: #F6F1E2;
+  margin-top: -2%;
+}
+
+.tools-a {
+  text-align: center;
+  font-family: 'Overpass';
+  font-size: 120%;
+  color: #F6F1E2;
+}

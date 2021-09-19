@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>9 North Design</title>
+    <style media="screen">
+    body {
+      background-image: url("img/bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="home.html" class="fa fa-home"></a>
+        <div class="header-text">
+          <a href="about.html" class="about">About</a>
+          <div class="dropdown">
+            <button class="dropBtn">Portfolio</button>
+            <div class="dropdown-content">
+              <a href="design.html">Graphic Design</a>
+              <a href="web.html">Web Design</a>
+              <a href="photo.html">Photography</a>
+            </div>
+          </div>
+          <a href="#" class="contact">Contact</a>
+        </div>
+    </div>
+      <div class="name">
+        <h2>Josh Davey</h2>
+      </div>
+
+      <div class="me">
+        <img class="me-img" src="img/me.png" alt="">
+      </div>
+<div class="passionate">
+<h2 class="passionate">Passionate about creatives industries.</h2>
+</div>
+
+
+          <div class="portfolioBtns">
+
+            <div id="design-card" class="card" onclick="design.html">
+
+              <img class="card-img-top" src="img/design.png" alt="Card image cap" onmouseover="designHover(this);" onmouseout="designUnhover(this);">
+              <div class="card-body">
+                <h5 class="card-title">Graphic Design</h5>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="img/photo.png" alt="Card image cap" onmouseover="photoHover(this);" onmouseout="photoUnhover(this);">
+              <div class="card-body">
+                <h5 class="card-title">Photography</h5>
+              </div>
+
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="img/web.png" alt="Card image cap" onmouseover="webHover(this);" onmouseout="webUnhover(this);">
+              <div class="card-body">
+                <h5 class="card-title">Web Design</h5>
+              </div>
+            </div>
+            <!-- Buttons End -->
+          </div>
+      <!-- Some Custom JS -->
+      <script>
+      // Design
+        function designHover(element) {
+        element.setAttribute('src', 'img/designInverted.png');
+
+        }
+
+        function designUnhover(element) {
+        element.setAttribute('src', 'img/design.png');
+
+        }
+        // Photo
+        function photoHover(element) {
+        element.setAttribute('src', 'img/photoInverted.png');
+        }
+
+        function photoUnhover(element) {
+        element.setAttribute('src', 'img/photo.png');
+        }
+        // Web
+        function webHover(element) {
+        element.setAttribute('src', 'img/webInverted.png');
+        }
+
+        function webUnhover(element) {
+        element.setAttribute('src', 'img/web.png');
+        }
+
+
+
+
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
