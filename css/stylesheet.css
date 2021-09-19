@@ -49,20 +49,20 @@ table {
 
 /* Reset ENDS ...*/
 
-@font-face {
-  font-family: 'Overpass Regular'; /*a name to be used later*/
-  src: url('../fonts/overpass/overpass-regular.ttf'); /*URL to font*/
-  font-family: 'Overpass Semibold'; /*a name to be used later*/
-  src: url('../fonts/overpass/overpass-semibold.ttf'); /*URL to font*/
-  font-family: 'Overpass Semibold Italic'; /*a name to be used later*/
-  src: url('../fonts/overpass/Overpass-SemiBoldItalic.ttf'); /*URL to font*/
-  font-family: 'Overpass Bold'; /*a name to be used later*/
-  src: url('../fonts/overpass/overpass-bold.ttf'); /*URL to font*/
-  font-family: 'Overpass Extra Bold'; /*a name to be used later*/
-  src: url('../fonts/overpass/overpass-extrabold.ttf'); /*URL to font*/
-  font-family: 'Overpass Black'; /*a name to be used later*/
-  src: url('../fonts/overpass/overpass-black.ttf'); /*URL to font*/
-}
+/* @font-face {
+  font-family: 'Overpass Regular';
+  src: url('../fonts/overpass/overpass-regular.ttf');
+  font-family: 'Overpass Semibold';
+  src: url('../fonts/overpass/overpass-semibold.ttf');
+  font-family: 'Overpass Semibold Italic';
+  src: url('../fonts/overpass/Overpass-SemiBoldItalic.ttf');
+  font-family: 'Overpass Bold';
+  src: url('../fonts/overpass/overpass-bold.ttf');
+  font-family: 'Overpass Extra Bold';
+  src: url('../fonts/overpass/overpass-extrabold.ttf');
+  font-family: 'Overpass Black';
+  src: url('../fonts/overpass/overpass-black.ttf');
+} */
 
 .backgroundImg {
   width: 100%;
@@ -124,7 +124,8 @@ table {
 }
 
 .nav-item {
-  font-family: 'Overpass Semibold';
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
 }
 
 .nav-link{
