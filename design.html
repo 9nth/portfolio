@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="css/splide.min.css">
     <title>9 North Design | Graphic Design</title>
     <style>
-
-
     @media screen and (max-width: 768px) {
+      .graphicPageCont {
+        display: none;
+      }
+      .mobile-msg {
+        display: block;
+        font-size: 30px;
+      }
+    }
+
+    /* @media screen and (max-width: 768px) {
 
       .nav-menu {
         position: fixed;
@@ -120,17 +128,19 @@
           padding-bottom: 10%;
         }
 
-        }
+        } */
         /* ^ Media Query Ends */
     </style>
   </head>
   <body>
+    <h1 class="mobile-msg">Sorry, this website hasn't been optimised for tablet & mobile just yet. Please check me out on desktop!</h1>
+    <div class="graphicPageCont">
     <div class="header">
         <nav class="navbar">
             <a href="index.html" class="fa fa-home hvr-grow"></a>
             <ul class="nav-menu">
                 <li class="nav-item hvr-float">
-                    <button class="about nav-link">About</button>
+                    <button class="about nav-link"> <a href="index.html#aboutCont">About</a></button>
                 </li>
                 <li class="nav-item hvr-float">
                   <div class="dropdown">
@@ -142,11 +152,11 @@
                     </div>
                   </div>
                 </li>
-                <li class="design-mob nav-item hvr-float"> <a href="design.html">Graphic Design</a></li>
+                <!-- <li class="design-mob nav-item hvr-float"> <a href="design.html">Graphic Design</a></li>
                 <li class="web-mob nav-item hvr-float"> <a href="web.html">Web Design</a> </li>
-                <li class="photo-mob nav-item hvr-float"> <a href="photo.html">Photography</a> </li>
+                <li class="photo-mob nav-item hvr-float"> <a href="photo.html">Photography</a> </li> -->
                 <li class="nav-item hvr-float">
-                    <button class="contactBtn nav-link">Contact</button>
+                    <button class="contactBtn nav-link"><a href="index.html#contactCont">Contact</a></button>
                 </li>
             </ul>
             <div class="hamburger">
@@ -252,5 +262,6 @@
 <script src="js/design.js">
 
 </script>
+  </div>
   </body>
 </html>

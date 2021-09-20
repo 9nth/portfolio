@@ -11,8 +11,17 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <title>9 North Design</title>
     <style media="screen">
+    @media screen and (max-width: 768px) {
+      .indexPageCont {
+        display: none;
+      }
+      .mobile-msg {
+        display: block;
+        font-size: 30px;
+      }
+    }
 
-    @media screen and (min-width: 391px) {
+    /* @media screen and (min-width: 391px) {
       .design-mob a,
       .web-mob a,
       .photo-mob a {
@@ -20,10 +29,10 @@
       }
     }
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 390px) { */
 
       /* Header */
-      .nav-menu {
+      /* .nav-menu {
         position: fixed;
         left: -120%;
         top: 5rem;
@@ -65,10 +74,10 @@
 
     .dropdown {
       display: none;
-    }
+    } */
 /* Header Ends */
 
-    .bg1  {
+    /* .bg1  {
       height: 70vh;
     }
 
@@ -93,16 +102,14 @@
 
     .passionate {
       font-size: 28px;
-    }
+    } */
 
-    .portfolioBtns {
+    /* .portfolioBtns {
       padding-left: 5%;
       padding-right: 5%;
-      /* flex-direction: column;
-      width: 60%; */
-    }
+    } */
 
-    .aboutMe {
+    /* .aboutMe {
       font-size: 140%;
       padding-bottom: 5%;
     }
@@ -110,11 +117,11 @@
     .skills {
       width: 95%;
       padding-left: 5%;
-    }
+    } */
 
     /* Contact Deets */
 
-    .secondBg {
+    /* .secondBg {
       height: 70vh;
     }
     .contact-head {
@@ -128,11 +135,13 @@
       font-size: 150%;
     }
 
-    }
+    } */
 
     </style>
   </head>
   <body>
+      <h1 class="mobile-msg">Sorry, this website hasn't been optimised for tablet & mobile just yet. Please check me out on desktop!</h1>
+      <div class="indexPageCont">
     <div class="header">
         <nav class="navbar">
             <a href="index.html" class="fa fa-home hvr-grow"></a>
@@ -150,9 +159,9 @@
                     </div>
                   </div>
                 </li>
-                <li class="design-mob nav-item hvr-float"> <a href="design.html">Graphic Design</a></li>
+                <!-- <li class="design-mob nav-item hvr-float"> <a href="design.html">Graphic Design</a></li>
                 <li class="web-mob nav-item hvr-float"> <a href="web.html">Web Design</a> </li>
-                <li class="photo-mob nav-item hvr-float"> <a href="photo.html">Photography</a> </li>
+                <li class="photo-mob nav-item hvr-float"> <a href="photo.html">Photography</a> </li> -->
                 <li class="nav-item hvr-float">
                     <button class="contactBtn nav-link">Contact</button>
                 </li>
@@ -181,31 +190,47 @@
 <div class="portfolioBtns">
   <div class="graphicContainer hvr-grow">
     <a href="design.html">
-    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.71 193.68"><defs><style>.cls-1{fill:#f8f8f8;stroke:#22314e;stroke-miterlimit:10;stroke-width:7px;}.cls-2{font-size:16.86px;fill:#22314e;font-family:Overpass-Black, Overpass;font-weight:800;}.cls-3{letter-spacing:-0.01em;}.cls-4{letter-spacing:-0.02em;}.cls-5{letter-spacing:-0.01em;}</style></defs><rect class="cls-1" x="3.5" y="3.5" width="186.71" height="186.68" rx="93.34"/><text class="cls-2" transform="translate(36.08 137.54)">G<tspan class="cls-3" x="11.18" y="0">r</tspan><tspan x="18.35" y="0">aphic </tspan><tspan class="cls-4" x="66.94" y="0">D</tspan><tspan class="cls-5" x="78.88" y="0">e</tspan><tspan x="88.32" y="0">sign</tspan></text><g id="Highlighter"><polygon points="98.61 102.24 81.11 84.74 79.9 85.75 97.6 103.45 98.61 102.24"/><path d="M109.79,78.05l-9.1,9.1A1.28,1.28,0,0,0,102.5,89l9.1-9.1a1.28,1.28,0,0,0-1.81-1.81Z" transform="translate(-3.54 -2.76)"/><path d="M128,72.86l-11.19-11.2a.72.72,0,0,0-1,0l-2.18,1.82L126.21,76,128,73.8A.69.69,0,0,0,128,72.86Z" transform="translate(-3.54 -2.76)"/><path d="M85.74,86.6,103,103.91l22.28-26.84L112.58,64.33Zm26.85-5.75-9.1,9.1a2.68,2.68,0,0,1-3.79-3.79l9.1-9.1a2.68,2.68,0,0,1,3.79,3.79Z" transform="translate(-3.54 -2.76)"/><path d="M85.7,109.54a.7.7,0,0,0,1,0h0l1.91-1.91L99.92,107,82.68,89.73,82,101,80.1,103a.71.71,0,0,0,0,1h0Z" transform="translate(-3.54 -2.76)"/><path d="M112.09,111.85H83l1.52-1.52-5.19-5.19-6.92,6.91a.7.7,0,0,0-.14.77.69.69,0,0,0,.64.43h39.19a.7.7,0,0,0,0-1.4Z" transform="translate(-3.54 -2.76)"/><path d="M117.69,111.85h-2.8a.7.7,0,0,0,0,1.4h2.8a.7.7,0,0,0,0-1.4Z" transform="translate(-3.54 -2.76)"/></g></svg>
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 206"><defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:#22314e;}.cls-3{font-size:18px;font-family:Overpass-Bold, Overpass;font-weight:700;}.cls-4{letter-spacing:-0.02em;}.cls-5{letter-spacing:0em;}.cls-6{letter-spacing:0em;}</style></defs><circle class="cls-1" cx="103" cy="103" r="99"/><path class="cls-2" d="M105.5,437a95,95,0,1,1-95,95,95.11,95.11,0,0,1,95-95m0-8a103,103,0,1,0,103,103,103,103,0,0,0-103-103Z" transform="translate(-2.5 -429)"/><g id="_64_illustration_design_pen_graphic_draw" data-name="64, illustration, design, pen, graphic, draw"><path class="cls-2" d="M144.19,541a.68.68,0,0,1,0,1.35h-5.91a.68.68,0,1,1,0-1.35Zm-18.11,4.41a.68.68,0,0,1,0,1.36H99.31a.68.68,0,1,1,0-1.36Zm-60.63,1.36a.68.68,0,0,1,0-1.36H77.27a.68.68,0,0,1,0,1.36Zm22.24,0a.68.68,0,1,1,0-1.36h5.38a.68.68,0,1,1,0,1.36Zm-19.3-14.08h-3v3h3v-.82h33.13v2.66H109v-2.66h34.19v.82h3v-3h-3v.81H112.38a20.44,20.44,0,0,0,13.13-19.1h1v-3.27H123.2v3.27h1A19.09,19.09,0,0,1,109,533.07v-2.25h-7.52v2.34A19.09,19.09,0,0,1,86,514.38h1v-3.27H83.64v3.27h1a20.48,20.48,0,0,0,13.13,19.1H68.39Zm43.12-22.74h-3.76m-3.83-44.87v44.87h-1.35V465.06a.68.68,0,1,1,1.35,0Zm3.83,0v44.87H106.4V465.06a.68.68,0,1,1,1.35,0Zm-2.47,60L111.51,510v-.08h0V465.06h0v-3.57H99.05v3.57h0V510Zm-6.23-65.35h12.46v-2a4.08,4.08,0,0,0-4.06-4.06H103.1a4.07,4.07,0,0,0-4,4.06ZM80.12,542.33a.68.68,0,0,1,0-1.35h51.14a.68.68,0,1,1,0,1.35Z" transform="translate(-2.5 -429)"/></g><text class="cls-3" transform="translate(41.3 145.42)">G<tspan class="cls-4" x="12.28" y="0">r</tspan><tspan x="19.35" y="0">aphic </tspan><tspan class="cls-5" x="68.65" y="0">D</tspan><tspan class="cls-6" x="81.13" y="0">e</tspan><tspan x="91.04" y="0">sign</tspan></text></svg>
     </a>
   </div>
 
   <div class="webContainer hvr-grow">
     <a href="web.html">
-    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.71 193.68"><defs><style>.cls-1{fill:#f8f8f8;stroke:#22314e;stroke-miterlimit:10;stroke-width:7px;}.cls-2{font-size:17.02px;fill:#22314e;font-family:Overpass-Black, Overpass;font-weight:800;}.cls-3{letter-spacing:-0.06em;}.cls-4{letter-spacing:-0.02em;}.cls-5{fill:#232020;}</style></defs><rect class="cls-1" x="3.5" y="3.5" width="186.71" height="186.68" rx="93.34"/><text class="cls-2" transform="translate(24.46 136.13)"><tspan class="cls-3">W</tspan><tspan x="13.57" y="0">eb </tspan><tspan class="cls-4" x="37.57" y="0">Dev</tspan><tspan x="68.64" y="0">elopment</tspan></text><path class="cls-5" d="M134.06,103.49V64.21a5,5,0,0,0-4.95-4.95H78.52a5,5,0,0,0-5,4.95v39.28H64.24v3.1a5,5,0,0,0,5,5h69.22a5,5,0,0,0,5-5v-3.1ZM75.93,64.21a2.6,2.6,0,0,1,2.59-2.6h50.59a2.6,2.6,0,0,1,2.59,2.6v39.28h-2.19V66a2.32,2.32,0,0,0-2.32-2.32H80.44A2.32,2.32,0,0,0,78.12,66v37.52H75.93Zm17.92,41.64h19.61v.37a.86.86,0,0,1-.85.86H94.71a.86.86,0,0,1-.86-.86v-.37Zm34.5-2.36H79.28V66a1.15,1.15,0,0,1,1.15-1.15h46.74A1.16,1.16,0,0,1,128.32,66v37.53ZM141,106.58a2.59,2.59,0,0,1-2.59,2.59H69.21a2.59,2.59,0,0,1-2.59-2.59v-.75H92.69v.37a2,2,0,0,0,2,2h17.9a2,2,0,0,0,2-2v-.37H141Z" transform="translate(-3.54 -2.76)"/></svg>
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 206"><defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:#22314e;}.cls-3{font-size:18px;font-family:Overpass-Bold, Overpass;font-weight:700;}.cls-4{letter-spacing:-0.02em;}.cls-5{letter-spacing:0em;}</style></defs><circle class="cls-1" cx="103" cy="103" r="99"/><path class="cls-2" d="M105.5,437a95,95,0,1,1-95,95,95.11,95.11,0,0,1,95-95m0-8a103,103,0,1,0,103,103,103,103,0,0,0-103-103Z" transform="translate(-2.5 -429)"/><text class="cls-3" transform="translate(29.02 145.42)"><tspan class="cls-4">W</tspan><tspan x="14.92" y="0">eb </tspan><tspan class="cls-5" x="39.55" y="0">Dev</tspan><tspan x="71.53" y="0">elopment</tspan></text><g id="laptop_setting_gear_cogwheel" data-name="laptop setting gear cogwheel"><path class="cls-2" d="M147.84,466H63.16a5.52,5.52,0,0,0-5.52,5.52v58.91a1.84,1.84,0,0,0,3.68,0V471.52a1.85,1.85,0,0,1,1.84-1.84h84.68a1.85,1.85,0,0,1,1.84,1.84v58.91a1.84,1.84,0,0,0,3.68,0V471.52a5.52,5.52,0,0,0-5.52-5.52Z" transform="translate(-2.5 -429)"/><path class="cls-2" d="M158.89,536h-40.5a1.85,1.85,0,0,0,0,3.69h38.34a5.54,5.54,0,0,1-5.21,3.68h-92a5.54,5.54,0,0,1-5.21-3.68H92.61a1.85,1.85,0,0,0,0-3.69H52.11a1.85,1.85,0,0,0-1.84,1.85,9.22,9.22,0,0,0,9.21,9.2h92a9.22,9.22,0,0,0,9.21-9.2,1.85,1.85,0,0,0-1.84-1.85Z" transform="translate(-2.5 -429)"/><path class="cls-2" d="M108.81,477.05h-6.62a1.83,1.83,0,0,0-1.8,1.45l-1.09,5a21.84,21.84,0,0,0-4.4,1.82l-4.29-2.75a1.9,1.9,0,0,0-1-.29,1.83,1.83,0,0,0-1.3.54l-4.68,4.68a1.83,1.83,0,0,0-.24,2.29l2.75,4.29a22,22,0,0,0-1.83,4.4l-5,1.09a1.83,1.83,0,0,0-1.44,1.8V508a1.85,1.85,0,0,0,1.44,1.8l5,1.09a22.14,22.14,0,0,0,1.83,4.39l-2.75,4.29a1.85,1.85,0,0,0,.25,2.3l4.68,4.68a1.83,1.83,0,0,0,1.3.53,1.81,1.81,0,0,0,1-.29L94.9,524a21.41,21.41,0,0,0,4.4,1.83l1.09,5a1.83,1.83,0,0,0,1.8,1.45h6.62a1.83,1.83,0,0,0,1.8-1.45l1.09-5a21.07,21.07,0,0,0,4.39-1.82l4.3,2.76a1.87,1.87,0,0,0,1,.29,1.8,1.8,0,0,0,1.3-.54l4.68-4.69a1.83,1.83,0,0,0,.25-2.29l-2.75-4.3a21.53,21.53,0,0,0,1.82-4.39l5-1.09a1.83,1.83,0,0,0,1.45-1.79v-6.63a1.83,1.83,0,0,0-1.45-1.79l-5-1.09a21.61,21.61,0,0,0-1.82-4.4l2.75-4.29a1.85,1.85,0,0,0-.25-2.3l-4.68-4.68a1.83,1.83,0,0,0-1.3-.53,1.81,1.81,0,0,0-1,.29l-4.3,2.75a22.14,22.14,0,0,0-4.39-1.83l-1.09-5a1.83,1.83,0,0,0-1.8-1.45ZM94.87,489.29a1.84,1.84,0,0,0,1-.27,18,18,0,0,1,5.45-2.26,1.84,1.84,0,0,0,1.38-1.4l1-4.63h3.66l1,4.64a1.86,1.86,0,0,0,1.38,1.4,18,18,0,0,1,5.45,2.26,1.84,1.84,0,0,0,1,.27,1.87,1.87,0,0,0,1-.29l4-2.56,2.59,2.59-2.56,4a1.85,1.85,0,0,0,0,2,17.89,17.89,0,0,1,2.26,5.45,1.86,1.86,0,0,0,1.41,1.38l4.62,1v3.66l-4.62,1a1.86,1.86,0,0,0-1.41,1.38,18,18,0,0,1-2.26,5.45,1.85,1.85,0,0,0,0,2l2.56,4-2.59,2.59-4-2.56a1.87,1.87,0,0,0-1-.29,1.82,1.82,0,0,0-1,.28,18.15,18.15,0,0,1-5.44,2.25,1.84,1.84,0,0,0-1.38,1.41l-1,4.63h-3.66l-1-4.64a1.84,1.84,0,0,0-1.38-1.4,18.13,18.13,0,0,1-5.44-2.26,1.9,1.9,0,0,0-1-.27,1.82,1.82,0,0,0-1,.29l-4,2.56-2.59-2.59,2.56-4a1.81,1.81,0,0,0,0-2,18.05,18.05,0,0,1-2.25-5.45,1.87,1.87,0,0,0-1.41-1.38l-4.62-1v-3.66l4.62-1a1.85,1.85,0,0,0,1.4-1.37A18.38,18.38,0,0,1,89.86,495a1.84,1.84,0,0,0,0-2l-2.56-4,2.59-2.59,4,2.56a1.79,1.79,0,0,0,1,.29Zm10.63,2.48A12.89,12.89,0,1,0,108,517.3a1.84,1.84,0,0,0-.34-3.65,1.55,1.55,0,0,0-.37,0,9.61,9.61,0,0,1-1.79.17,9.21,9.21,0,1,1,9.2-9.2,1.84,1.84,0,1,0,3.68,0,12.9,12.9,0,0,0-12.88-12.89Z" transform="translate(-2.5 -429)"/><path class="cls-2" d="M114.71,510.45a1.84,1.84,0,1,0,1.84,1.84,1.84,1.84,0,0,0-1.84-1.84Z" transform="translate(-2.5 -429)"/></g></svg>
     </a>
   </div>
 
   <div class="photoContainer hvr-grow">
     <a href="photo.html">
-    <svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.71 193.68"><defs><style>.cls-1{fill:#f8f8f8;stroke:#22314e;stroke-miterlimit:10;stroke-width:7px;}.cls-2{font-size:17.28px;fill:#22314e;font-family:Overpass-Black, Overpass;font-weight:800;}.cls-3{letter-spacing:-0.01em;}.cls-4{letter-spacing:0em;}.cls-5{letter-spacing:-0.01em;}.cls-6{letter-spacing:-0.01em;}</style></defs><rect class="cls-1" x="3.5" y="3.5" width="186.71" height="186.68" rx="93.34"/><text class="cls-2" transform="translate(43.64 139.63)">Ph<tspan class="cls-3" x="21.58" y="0">o</tspan><tspan class="cls-4" x="31.33" y="0">t</tspan><tspan x="38.21" y="0">og</tspan><tspan class="cls-5" x="58.18" y="0">r</tspan><tspan x="65.53" y="0">ap</tspan><tspan class="cls-6" x="85.52" y="0">h</tspan><tspan x="95.8" y="0">y</tspan></text><path d="M103.05,103.93a12.3,12.3,0,1,0-12.3-12.3A12.32,12.32,0,0,0,103.05,103.93Zm0-21.92a9.6,9.6,0,1,1-9.6,9.6A9.61,9.61,0,0,1,103.05,82Z" transform="translate(-3.16 -3.63)"/><path d="M75.69,75.6h2.83a1.35,1.35,0,1,0,0-2.69H75.69a1.35,1.35,0,1,0,0,2.69Z" transform="translate(-3.16 -3.63)"/><path d="M125.91,75.6h5.67a1.35,1.35,0,1,0,0-2.69h-5.67a1.35,1.35,0,1,0,0,2.69Z" transform="translate(-3.16 -3.63)"/><path d="M135.42,67.73H119.75a4.64,4.64,0,0,1-3.82-2,7.37,7.37,0,0,0-6.05-3.17H96.17a7.43,7.43,0,0,0-6,3.17,4.62,4.62,0,0,1-3.82,2H83.43V64.81a1.36,1.36,0,0,0-1.35-1.35H72.34A1.36,1.36,0,0,0,71,64.81v2.92h-.31a3.36,3.36,0,0,0-3.35,3.35v41.21a3.36,3.36,0,0,0,3.35,3.35h64.74a3.36,3.36,0,0,0,3.35-3.35V71.06A3.36,3.36,0,0,0,135.42,67.73Zm.65,40.36h-4v-21h4ZM73.71,66.16h7v1.57h-7Zm-3,4.27H86.35a7.37,7.37,0,0,0,6-3.17,4.66,4.66,0,0,1,3.83-2h13.71a4.64,4.64,0,0,1,3.82,2,7.35,7.35,0,0,0,6,3.17h15.62a.65.65,0,0,1,.65.65v8.43H117.48a19.07,19.07,0,0,0-28.86,0H70V71.06A.64.64,0,0,1,70.68,70.43Zm32.37,5.17A16.41,16.41,0,1,1,86.64,92,16.43,16.43,0,0,1,103.05,75.6Zm32.37,37.32H70.68a.65.65,0,0,1-.65-.65V82.21H86.66a19.11,19.11,0,1,0,32.82,0h16.64v2.14h-5.33a1.35,1.35,0,0,0-1.35,1.35v23.71a1.36,1.36,0,0,0,1.35,1.35h5.33v1.51A.73.73,0,0,1,135.42,112.92Z" transform="translate(-3.16 -3.63)"/></svg>
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 206"><defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:#22314e;}.cls-3{font-size:18px;font-family:Overpass-Bold, Overpass;font-weight:700;}.cls-4{letter-spacing:0em;}.cls-5{letter-spacing:-0.01em;}.cls-6{letter-spacing:-0.02em;}.cls-7{letter-spacing:-0.01em;}</style></defs><circle class="cls-1" cx="103" cy="103" r="99"/><path class="cls-2" d="M105.5,437a95,95,0,1,1-95,95,95.11,95.11,0,0,1,95-95m0-8a103,103,0,1,0,103,103,103,103,0,0,0-103-103Z" transform="translate(-2.5 -429)"/><text class="cls-3" transform="translate(49.61 145.42)">Ph<tspan class="cls-4" x="21.85" y="0">o</tspan><tspan class="cls-5" x="32.04" y="0">t</tspan><tspan x="38.84" y="0">og</tspan><tspan class="cls-6" x="59.33" y="0">r</tspan><tspan x="66.4" y="0">ap</tspan><tspan class="cls-7" x="86.45" y="0">h</tspan><tspan x="96.68" y="0">y</tspan></text><path class="cls-2" d="M149,487H137.93l-6-12H109.07l-6,12H81.5v-6h-15v6H62a4.49,4.49,0,0,0-4.5,4.5v51A4.49,4.49,0,0,0,62,547h87a4.49,4.49,0,0,0,4.5-4.5v-51A4.49,4.49,0,0,0,149,487Zm-79.5-3h9v3h-9Zm81,58.5A1.5,1.5,0,0,1,149,544H62a1.5,1.5,0,0,1-1.5-1.5v-51A1.5,1.5,0,0,1,62,490h42.93l6-12h19.14l6,12H149a1.5,1.5,0,0,1,1.5,1.5Z" transform="translate(-2.5 -429)"/><rect class="cls-2" x="76" y="64" width="3" height="48"/><path class="cls-2" d="M120.5,493a24,24,0,1,0,24,24A24,24,0,0,0,120.5,493Zm0,45a21,21,0,1,1,21-21A21,21,0,0,1,120.5,538Z" transform="translate(-2.5 -429)"/><path class="cls-2" d="M120.5,502a15,15,0,1,0,15,15A15,15,0,0,0,120.5,502Zm0,27a12,12,0,1,1,12-12A12,12,0,0,1,120.5,529Z" transform="translate(-2.5 -429)"/><circle class="cls-2" cx="94" cy="67" r="3"/></svg>
     </a>
   </div>
 
   <!-- * PortfolioBtns Ends -->
 </div>
 
-<div class="aboutCont">
+<div class="aboutCont" id="aboutCont">
   <h3 class="aboutHeading">About Me</h3>
 
-  <p class="aboutMe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="aboutMe">Creativity, commitment and passion are three key characteristics that
+describe me. <br><br>
 
-<h3 class="aboutSkills">My Skills</h3>
+After several years working as a freelance photographer, I have spent
+over 3 years expanding my creative skillset through study. Through this
+I have discovered a passion for digital development, from the creative to
+the technical.<br><br>
+
+I enjoy the creative freedom of design and bringing a story to life through
+creative means. On the technical side, building websites and programs
+that improve the lives of others is something that I find fascinating and
+am looking for opportunities to be part of teams that do this. <br><br>
+I’m looking for a role where I can utilise and grow my exising web
+and graphic deisgn skills, as well as working in a team that produces
+meaningful work that improves the world around us.</p>
+
+<button class="resume" type="button" name="button"><a href="resume2021.pdf" target="_blank" download="resume2021.pdf">My Resume</a></button>
+
+<h3 class="aboutSkills">My Skills:</h3>
 <!-- Icons -->
 <!-- about div ends -->
 </div>
@@ -222,25 +247,24 @@
 
 <!-- Adobe -->
 <div class="adobe">
-  <svg id="Layer_6" data-name="Layer 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.1 96.1"><defs><style>.cls-1{fill:#fff;stroke:#22314e;stroke-miterlimit:10;stroke-width:5px;}.cls-2{font-size:22.71px;fill:#22314e;font-family:Overpass-Black, Overpass;font-weight:800;}.cls-3{letter-spacing:-0.01em;}.cls-4{letter-spacing:0em;}</style></defs><circle class="cls-1" cx="48.05" cy="48.05" r="45.55"/><text class="cls-2" transform="translate(13.15 45.75)"><tspan class="cls-3">A</tspan><tspan x="16.49" y="0">dobe</tspan><tspan x="6.18" y="20.33">Sui</tspan><tspan class="cls-4" x="40.78" y="20.33">t</tspan><tspan x="49.82" y="20.33">e</tspan></text></svg>
+  <svg id="Layer_6" data-name="Layer 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.1 96.1"><defs><style>.cls-1{fill:#fff;stroke:#22314e;stroke-miterlimit:10;stroke-width:5px;}.cls-2{font-size:22.71px;fill:#22314e;font-family:Overpass-Black, Overpass;font-weight:800;}.cls-3{letter-spacing:-0.01em;}.cls-4{letter-spacing:0em;}</style></defs><circle class="cls-1" cx="48.05" cy="48.05" r="45.55"/><text class="cls-2" transform="translate(13.15 45.75)"><tspan class="cls-2">A</tspan><tspan x="16.49" y="0">dobe</tspan><tspan x="6.18" y="20.33">Sui</tspan><tspan class="cls-4" x="40.78" y="20.33">t</tspan><tspan x="49.82" y="20.33">e</tspan></text></svg>
 </div>
 
 <!-- UX Design -->
 <div class="ux">
-  <svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.1 96.1"><defs><style>.cls-1{fill:#fff;stroke:#22314e;stroke-miterlimit:10;stroke-width:5px;}.cls-2{font-size:22px;fill:#22314e;font-family:Overpass-Black, Overpass;font-weight:800;}.cls-3{letter-spacing:-0.01em;}.cls-4{letter-spacing:-0.02em;}.cls-5{letter-spacing:-0.01em;}</style></defs><circle class="cls-1" cx="48.05" cy="48.05" r="45.55"/><text class="cls-2" transform="translate(31.88 45.24)"><tspan class="cls-3">U</tspan><tspan x="15.69" y="0">X</tspan><tspan class="cls-4" x="-20.14" y="20.33">D</tspan><tspan class="cls-5" x="-4.56" y="20.33">e</tspan><tspan x="7.76" y="20.33">sign</tspan></text></svg>
+  <svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.1 96.1"><defs><style>.cls-1{fill:#fff;stroke:#22314e;stroke-miterlimit:10;stroke-width:5px;}.cls-2{font-size:22px;fill:#22314e;font-family:Overpass-Black, Overpass;font-weight:800;}.cls-3{letter-spacing:-0.01em;}.cls-4{letter-spacing:-0.02em;}.cls-5{letter-spacing:-0.01em;}</style></defs><circle class="cls-1" cx="48.05" cy="48.05" r="45.55"/><text class="cls-2" transform="translate(31.88 45.24)"><tspan class="cls-2">U</tspan><tspan x="15.69" y="0">X</tspan><tspan class="cls-4" x="-20.14" y="20.33">D</tspan><tspan class="cls-5" x="-4.56" y="20.33">e</tspan><tspan x="7.76" y="20.33">sign</tspan></text></svg>
 </div>
 
 <!-- UI Design -->
 <div class="ui">
-  <svg id="Layer_8" data-name="Layer 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.1 96.1"><defs><style>.cls-1{fill:#fff;stroke:#22314e;stroke-miterlimit:10;stroke-width:5px;}.cls-2{font-size:22px;fill:#22314e;font-family:Overpass-Black, Overpass;font-weight:800;}.cls-3{letter-spacing:-0.02em;}.cls-4{letter-spacing:-0.01em;}</style></defs><circle class="cls-1" cx="48.05" cy="48.05" r="45.55"/><text class="cls-2" transform="translate(36.21 45.24)">UI<tspan class="cls-3" x="-24.47" y="20.33">D</tspan><tspan class="cls-4" x="-8.9" y="20.33">e</tspan><tspan x="3.42" y="20.33">sign</tspan></text></svg>
+  <svg id="Layer_8" data-name="Layer 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.1 96.1"><defs><style>.cls-1{fill:#fff;stroke:#22314e;stroke-miterlimit:10;stroke-width:5px;}.cls-2{font-size:22px;fill:#22314e;font-family:Overpass-Black, Overpass;font-weight:800;}.cls-3{letter-spacing:-0.02em;}.cls-4{letter-spacing:-0.01em;}</style></defs><circle class="cls-1" cx="48.05" cy="48.05" r="45.55"/><text class="cls-2" transform="translate(36.21 45.24)">UI<tspan class="cls-4" x="-24.47" y="20.33">D</tspan><tspan class="cls-4" x="-8.9" y="20.33">e</tspan><tspan x="3.42" y="20.33">sign</tspan></text></svg>
 </div>
 
 
 </div>
 
 <div class="secondBg">
-  <div class="contactCont">
-    <a id="contactTo"></a>
+  <div class="contactCont" id="contactCont">
     <h2 class="contact-head">Contact Details</h2>
         <div class="contact-info-cont">
           <div class="contact-icons">
@@ -272,7 +296,7 @@ aboutBtn.onclick = function () {
 
 var contactBtn = document.querySelector('.contactBtn');
 contactBtn.onclick = function () {
-  document.querySelector('.contactCont').scrollIntoView({
+  document.querySelector('.contact-head').scrollIntoView({
     behavior: 'smooth'
   });
 };
@@ -287,17 +311,11 @@ function mobileMenu() {
     navMenu.classList.toggle("active");
 }
 
-var contactBtn = document.querySelector('.contactBtn');
-contactBtn.onclick = function () {
-  location.href = "index.html";
 
-  document.querySelector('.contact-head').scrollIntoView({
-    behavior: 'smooth'
-  });
 
-}
 </script>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </div>
   </body>
 </html>

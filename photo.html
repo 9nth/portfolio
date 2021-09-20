@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <title>9 North | Photography</title>
     <style>
-      @media screen and (max-width: 426px) {
+    @media screen and (max-width: 768px) {
+      .photoPageCont {
+        display: none;
+      }
+      .mobile-msg {
+        display: block;
+        font-size: 30px;
+      }
+    }
+      /* @media screen and (max-width: 426px) {
 
         .row-1,
         .row-2,
@@ -88,17 +97,20 @@
         .header-text {
           display: none;
         }
-      }
+      } */
       /* ^ media query ends */
     </style>
   </head>
   <body>
+    <h1 class="mobile-msg">Sorry, this website hasn't been optimised for tablet & mobile just yet. Please check me out on desktop!</h1>
+    <div class="photoPageCont">
     <div class="header">
         <nav class="navbar">
             <a href="index.html" class="fa fa-home hvr-grow"></a>
             <ul class="nav-menu">
                 <li class="nav-item hvr-float">
-                    <button class="about nav-link">About</button>
+                  <button class="about nav-link"> <a href="index.html#aboutCont">About</a></button>
+              </li>
                 </li>
                 <li class="nav-item hvr-float">
                   <div class="dropdown">
@@ -110,11 +122,11 @@
                     </div>
                   </div>
                 </li>
-                <li class="design-mob nav-item hvr-float"> <a href="design.html">Graphic Design</a></li>
+                <!-- <li class="design-mob nav-item hvr-float"> <a href="design.html">Graphic Design</a></li>
                 <li class="web-mob nav-item hvr-float"> <a href="web.html">Web Design</a> </li>
-                <li class="photo-mob nav-item hvr-float"> <a href="photo.html">Photography</a> </li>
+                <li class="photo-mob nav-item hvr-float"> <a href="photo.html">Photography</a> </li> -->
                 <li class="nav-item hvr-float">
-                    <button class="contactBtn nav-link">Contact</button>
+                      <button class="contactBtn nav-link"><a href="index.html#contactCont">Contact</a></button>
                 </li>
             </ul>
             <div class="hamburger">
@@ -128,10 +140,10 @@
 <h2 class="photo-head">Photography</h2>
 <hr>
 <h3 class="line"></h3>
-  <div class="photo-section-btns">
+  <!-- <div class="photo-section-btns">
     <button id="landscapeBtn">Landscape</button>
     <button id="commercialBtn">Commercial</button>
-  </div>
+  </div> -->
 <h2 class="photo-head-2">Landscape</h2>
 
 <div class="row-1">
@@ -204,5 +216,6 @@ commercialBtn.onclick = function () {
   });
 };
 </script>
+  </div>
   </body>
 </html>

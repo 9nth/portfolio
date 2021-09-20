@@ -138,7 +138,7 @@ function mobileMenu() {
 
 var contactBtn = document.querySelector('.contactBtn');
 contactBtn.onclick = function () {
-  location.href = "home.html";
+  location.href = "index.html";
 
   document.querySelector('.contact-head').scrollIntoView({
     behavior: 'smooth'
